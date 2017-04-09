@@ -1,0 +1,225 @@
+@mColor: #ff841d;
+.main .main_tit h3 {
+    height: 40px;
+    line-height: 40px;
+    background: #f3f3f3;
+    color: #874604;
+    border-bottom: 1px solid #c8c8c8;
+    border-top: 1px solid #c8c8c8;
+    font-size: 15px;
+    padding-left: 10px;
+    a {
+        color: #874604;
+    }
+}
+
+
+/* 10大品牌 */
+
+.ajaxTop {
+    li {
+        background: url(../images/arrow-right.svg) no-repeat right center/20px;
+        height: 57px;
+        padding: 10px 0;
+        margin-right: 10px;
+        border-bottom: 1px solid #e7e7e7;
+        a {
+            display: block;
+            // border: 1px solid 
+        }
+        b {
+            float: left;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            display: block;
+            background: #c9c9c9;
+            color: #fff;
+            font-weight: normal;
+            margin: 0 12px 0 10px;
+        }
+        div {
+            overflow: hidden;
+            font-size: 16px;
+            line-height: 20px;
+            .count {
+                font-size: 12px;
+                color: #999;
+            }
+        }
+    }
+    li:nth-child(1) {
+        b {
+            background: #f10e0e;
+        }
+    }
+    li:nth-child(2) {
+        b {
+            background: #ff9314;
+        }
+    }
+    li:nth-child(3) {
+        b {
+            background: #8adf5b;
+        }
+    }
+}
+
+
+/* 品牌销量 */
+
+.ajaxSell {
+    li {
+        // background: #fff;
+        position: relative;
+        padding: 10px;
+        border-bottom: 1px solid #e7e7e7;
+        a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 8;
+        }
+    }
+    .brandImg {
+        float: left;
+        width: 120px;
+        height: 120px;
+        margin-right: 10px;
+        img {
+            width: 120px;
+            height: 120px;
+        }
+    }
+    .con {
+        overflow: hidden;
+        font-size: 15px;
+        .title {
+            line-height: 28px;
+            height: 56px;
+            // overflow: hidden;
+            font-family: Tahoma, sans-serif;
+        }
+        .price {
+            margin: 8px 0;
+            color: #ed0000;
+            font-size: 18px;
+            &:first-letter {
+                font-size: 14px;
+                font-family: '微软雅黑';
+            }
+        }
+        .other {
+            color: #a1a1a1;
+            font-size: 12px;
+        }
+        .star {
+            position: absolute;
+            right: 10px;
+            top: 70px;
+            font-size: 20px;
+            color: #ff841d;
+            word-spacing: 25px;
+        }
+    }
+}
+
+
+/* 产品评论 */
+.ajaxComm {
+	padding-bottom: 18px;
+	.good{
+		padding: 10px;
+	}
+	.brandImg{
+		float: left;
+		margin-right: 12px;
+		img{
+			width: 80px;
+			height: 80px;
+		}
+	}
+	.con{
+		overflow: hidden;
+		line-height: 28px;
+		height: 56px;
+		font-size: 14px;
+        color:#999 !important;
+		font-family: Tahoma , '微软雅黑',sans-serif;
+	}
+	.comm{
+		border: 1px solid #fff;
+		margin: 0 10px;
+		padding: 10px;
+		border-radius: 5px;
+		background: #F8F8F8;
+		font-size: 15px;
+		margin-bottom: 15px;
+		box-shadow: 0 0 5px #ccc;
+
+
+	}
+	.comm_title{
+		position: relative;
+		font-size: 14px;
+		height: 20px;
+		line-height: 20px;
+		margin-bottom: 10px;
+		color:#4f6900;
+		.date{
+			position: absolute;
+            font-size: 13px;
+			right:10px;
+			top: 4px;
+			color:#999;
+		}	
+		.star{
+			margin: 0 8px;
+			font-size: 17px;
+			color: @mColor;
+		}
+	}
+	.comm_con{
+        color: #000;
+        // font:14px Arial, Tahoma, Verdana;
+        font:15px '楷体';
+        line-height: 22px;
+        cursor: pointer;
+
+	}
+}
+/* 5行溢出 */
+/*多行溢出 手机端使用*/
+.txt-cut5{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+.no1{
+    height: 100px;
+    width: 100%;
+    background:#fff url(../images/no1.jpg) no-repeat center;
+}
+.no2{
+        height: 100px;
+    width: 100%;
+    background:#fff url(../images/no2.jpg) no-repeat center;
+}
+.btn{
+    height: 35px;
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    font: 20px/35px 'Helvetica',sans-serif;
+    text-align: center;
+    font-size: 16px;
+
+}
+.none{
+    display: none;
+}

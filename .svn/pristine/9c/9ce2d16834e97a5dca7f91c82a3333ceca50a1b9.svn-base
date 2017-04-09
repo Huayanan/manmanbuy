@@ -1,0 +1,93 @@
+html{
+    min-width: 320px;
+}
+header {
+    .back {
+        width: 50px;
+        position: absolute;
+        a {
+            display: block;
+            width: 100%;
+            height: 44px;
+            background-image: url('../images/back.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 25px;
+            width: 50px;
+            margin-top: 3px;
+        }
+    }
+    h1 {
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        // font-weight: normal;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+//主体部分
+main {
+    margin-bottom: 20px;
+    li {
+        background: #fff;
+        width: 50%;
+        padding: 10px 0 0 10px;
+        border: 1px solid #eee;
+        float: left;
+        a {
+            display: block;
+            .img {
+                text-align: center;
+                margin: 10px;
+                img {
+                    width: 140px;
+                    height: 140px;
+                }
+            }
+            .title{
+                height: 36px;
+                line-height: 18px;
+                font-size: 14px;
+                font-weight: bold;
+                overflow: hidden;
+                word-break:break-all;
+            }
+            .price{
+                color:#ff6c00;
+                font-size: 14px;
+                height: 18px;
+                line-height: 18px;
+                margin: 8px 0;
+            }
+            .mall{
+                height: 24px;
+                line-height: 18px;
+                font-size: 12px;
+                margin: 0 8px 6px 0;
+                color: #a1a1a1;
+            }
+        }
+    }
+
+    
+}
+
+@keyframes autoRotate{
+			from{}
+			to{
+				transform: rotateZ(360deg);
+			}
+		}
+.load{
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -25px;
+	animation: autoRotate 1s linear infinite;
+    
+    img{
+        width: 50px;
+    }
+}

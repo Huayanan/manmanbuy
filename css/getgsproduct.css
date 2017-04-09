@@ -1,0 +1,151 @@
+@charset "utf-8";
+div,
+span,
+p,
+h1,
+h2,
+h3,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+/*精灵图*/
+[class^="icon_"] {
+  background: url(../images/icon_bar.png) no-repeat center center / 50% 50%;
+}
+/*header*/
+header > a {
+  color: #ffffff;
+  font: normal 30px/50px "黑体";
+  padding: 0 20px;
+  /*float:left;*/
+  position: absolute;
+  left: 0px;
+}
+header > h3 {
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+  font-weight: normal;
+}
+/*箭头*/
+/*公共类*/
+/*nav start*/
+nav {
+  height: 38px;
+  line-height: 38px;
+  border-bottom: 1px solid #dadada;
+  position: relative;
+  background: #ffffff;
+}
+nav > .menu {
+  height: 100%;
+  width: 35px;
+  border-left: 1px solid #dadada;
+  background: url(../images/search_menu.png) no-repeat center center / 20px 20px;
+  float: right;
+}
+nav > div.navs {
+  margin-right: 36px;
+}
+nav > div.navs > div {
+  float: left;
+  width: 33.333%;
+  text-align: center;
+  font-size: 14px;
+}
+nav > div.navs > div > span {
+  position: relative;
+}
+nav > div.navs > div > span i {
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  border-width: 6px;
+  border-style: solid;
+  top: 6px;
+  border-color: #565656 transparent transparent;
+  right: -20px;
+}
+nav > div.navs > div > span i.arr_top {
+  width: 0;
+  height: 0;
+  line-height: 0;
+  border-width: 6px;
+  border-style: solid;
+  top: 0;
+  border-color: transparent transparent #565656;
+}
+nav > div.navs > div > ul {
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  width: 100%;
+  left: 0;
+  box-shadow: 0 5px 10px gray;
+}
+nav > div.navs > div > ul > li {
+  line-height: 36px;
+  border-top: 1px solid #dadada;
+  padding: 0 10px;
+  text-align: left;
+  position: relative;
+}
+nav > div.navs > div > ul > li.current:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  width: 32px;
+  height: 100%;
+  background: url(../images/dui.png) no-repeat center center / 16px 16px;
+}
+/*nav end*/
+/*商品列表 start*/
+.products {
+  padding: 2px 10px 2px 2px;
+}
+.products > li {
+  padding: 8px 0 0 8px;
+  width: 50%;
+  float: left;
+}
+.products > li > div {
+  background: #ffffff;
+  padding: 5px;
+  text-align: center;
+}
+.products > li > div img {
+  height: 174px;
+}
+.products > li > div p,
+.products > li > div div {
+  text-align: left;
+}
+.products > li > div p {
+  font-size: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.products > li > div div > span {
+  font: normal 20px/36px "arial";
+  color: #f8601d;
+}
+.products > li > div div > button {
+  width: 64px;
+  height: 25px;
+  background: #ff9501;
+  border-radius: 5px;
+  color: #ffffff;
+  float: right;
+  margin-top: 10px;
+}
+/*商品列表 end*/

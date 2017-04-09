@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" content>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial
+    -scale=1.0, maximum-scale=1.0, minimum-scale=1.0">    
+    <title>慢慢买</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet/less" href="CSS/index.less"> 
+    
+    <script type='text/javascript' src='lib/js/less.min.js'></script>
+</head>
+<body>
+<!-- 网站头部 -->
+    <script src='js/header.js'></script>
+    <!-- <header>
+        <a href="index.html">
+            <img src="images/icon/header_logo.png" alt="">
+        </a>
+        <a href="javascript:window.location=%27http://m.manmanbuy.com/download/%27" onclick="trackEvent('header下载');" title="手机app下载"></a>
+    </header> -->
+<!-- 搜索框 -->
+    <!-- <section class='searchBox'>
+        <input type="text" placeholder='输入你想要比价的商品'>
+        <input type="button" value='搜索'>
+    </section> -->
+<!-- 导航栏 -->
+    <nav>
+        <ul>
+            <!-- <li>
+                <a href="">
+                    <img src="images/icon/ic_search.png" alt="">
+                    比价搜索
+                </a>
+            </li> -->            
+        </ul>
+    </nav>
+<!-- 折扣推荐商品推荐 -->
+    <section class='recommen-product'>
+        <a class="title" href=''>
+            超值折扣推荐
+            <span></span>
+        </a>
+        <div class="content">
+            <!-- <a href="recommonDetail.html">
+                <div class="product-img">
+                    <img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&amp;imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg" alt="移动端凑单品：海天 鲜味 生抽 1.28L">
+                </div>
+                <div class="product-message">
+                    <p>移动端凑单品：海天 鲜味 生抽 1.28L
+                        <span>10.9元</span>
+                    </p>
+                    <p>
+                        <span class='product-form'>京东商城 |</span>
+                        <span class='product-time'>10-25 14:10</span>
+                        <span class='product-comCount'>1</span>
+                    </p>
+                </div>
+            </a> -->
+        </div>
+        <div class="more-product">
+            <a href="">更多优惠信息 >></a>
+        </div>
+    </section>
+
+    <section class='brand-ranking'>
+        <a href="">品牌排行<span></span></a>
+    </section>
+  
+
+<!-- 网站底部 -->
+    <script src='js/footer.js'></script>
+    <!-- <footer>
+        <div class="foot_top clearifix">
+            <input type="button" value='登录'>
+            <input type="button" value='注册'>
+            <input type="button" value='返回顶部'>
+        </div>
+        <div class="foot_bottom">
+            <p><a href="">手机APP下载</a><a href="">慢慢买手机版</a>  掌上比价平台</p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer> -->
+</body>
+
+<script src='lib/js/jquery-3.1.0.min.js'></script>
+<script src='js/index.js'></script>
+</html>

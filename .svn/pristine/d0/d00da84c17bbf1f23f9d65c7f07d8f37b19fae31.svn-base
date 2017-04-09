@@ -1,0 +1,72 @@
+header {
+    background: #f4483e;
+    .back {
+        width: 50px;
+        position: absolute;
+        a {
+            display: block;
+            width: 100%;
+            height: 44px;
+            background-image: url('../images/back.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 25px;
+            width: 50px;
+            margin-top: 3px;
+        }
+    }
+    h1 {
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        // font-weight: normal;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+// 主体部分
+main{
+    background: #fff;
+    padding: 10px 0 20px 10px;
+    li{
+        width: 120px;
+        height: 80px;
+        margin: 5px 0 0 5px;
+        float: left;
+        a{
+            height: 100%;
+            border: 1px solid #ccc;
+            display: block;
+            text-align: center;
+            line-height: 80px;
+            img{
+                vertical-align: middle;
+                max-width: 50px;
+                margin-top: -10px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 20px;
+                margin-top: -20px;
+            }
+        }
+    }
+    // loading
+    @keyframes autoRotate{
+			from{}
+			to{
+				transform: rotateZ(360deg);
+			}
+		}
+
+    .load{
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -25px;
+	animation: autoRotate 1s linear infinite;
+    img{
+        width: 50px;
+    }
+}
+}

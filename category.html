@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minmum-scale=1.0'>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <title>慢慢买</title>
+    <link rel="stylesheet/less" href="css/category.less">    
+    <script type='text/javascript' src='lib/js/less.min.js'></script>
+</head>
+<body>
+    <script src='js/header.js'></script>    
+    <section class='category'>
+        <ul class="categoryList">
+            <script type="text/html" id="templateTT">
+                {{each result as value i}}
+                <li>
+                    <a href="javascript:;">
+                        {{value.title}}
+                        <span></span>
+                    </a>
+                    <!-- <ul>
+                        <li><a href="">电视</a></li>
+                    </ul> -->                    
+                </li>
+                {{/each}}
+            </script>
+        </ul>
+    </section>
+
+
+    
+    
+    <script src="lib/js/jquery-3.1.0.min.js"></script>
+    <script src="lib/js/template.js"></script>
+    <script src='js/footer.js'></script>
+    <script src="js/catagory.js"></script>
+
+</body> 
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet/less" href="css/base.less">
+    <link rel="stylesheet/less" type="" href="css/couponproduct.less">
+    <script src="lib/less/less.js"></script>
+    <title>慢慢买</title>
+</head>
+
+<body>
+    <!--优惠券弹出层-->
+        <div class="layer">
+            <div class="left">
+                <img src="images/arrowL.png" class='l'>
+            </div>
+            <div class="right">
+                <img src="images/arrowR.png" class="r">
+            </div>
+            <img src="" class="img">
+        </div>
+    <!--头部区域-->
+    <header class="clearfix">
+        <div class="back">
+            <a href="coupon.html">
+            </a>
+        </div>
+        <h1>肯德基优惠券</h1>
+        <div class="download">
+            <img src="images/header_app.png" alt="">
+        </div>
+    </header>
+    <!--主体区域-->
+    <main>
+        <p>
+            --点餐前出示手机中的优惠券，即可享受优惠--
+        </p>
+        <ul class="clearfix">
+            
+        </ul>
+        <!--loading-->
+        <div class="load">
+            <img src="images/loading.png" alt="">
+        </div>
+    </main>
+
+    <!--footer区域-->
+    <footer>
+
+        <div class="footer-top">
+            <a href="login.aspx.htm" class='log'>登录</a>
+            <a href="login.aspx.htm" class='reg'>注册</a>
+            <a href="#" class='toTop'>
+                <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+        </div>
+        <div class="footer-bottom">
+            <p><a href="javascript:;">
+                手机APP下载
+            </a><a href="index.html">慢慢买手机版</a>--掌上比价平台</p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+    <!--js引包-->
+    <script type='text/html' id='list'>
+        {{each result as value}}
+        <li class="clearfix">
+                <a href="javascript:;" class="clearfix">
+                    <div class="img">
+                        {{#(value.couponProductImg).replace('src','data-original')}}
+                    </div>
+                    <div class="info">
+                        <div class="tit">{{value.couponProductName}}</div>
+                        <div class="price">{{value.couponProductPrice}}</div>
+                        <div class="time">{{value.couponProductTime}}</div>
+                        <div class="arrow"></div>
+                    </div>
+                </a>
+            </li>
+        {{/each}}
+    </script>
+    <script src='lib/jquery/jquery.min.js'></script>
+    <script src='lib/template.js'></script>
+    <script src='js/base.js'></script>
+    <script src='lib/lazyload.js'></script>
+    <script src='js/couponproduct.js'></script>
+</body>
+
+</html>

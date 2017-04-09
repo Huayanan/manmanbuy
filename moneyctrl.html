@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/savemoney.css">
+</head>
+
+<body>
+    <!-- top -->
+    <header id="savemoney">
+        <div class="save-left">
+            <a href="index.html"></a>
+        </div>
+        <div class="save-right">
+            <a href="#"></a>
+        </div>
+        <h2>省钱控-最新优惠</h2>
+    </header>
+    <!-- content -->
+    <main id="content">
+        <!--<div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="images/1.jpg" alt="...">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">衣服介绍</h4>
+                <p class="price">15元</p>
+                <span class="from">京东商城 | 10-25 14:10</span>
+                <span class="comment"><i class="icon-comment"></i>1</span>
+            </div>
+        </div>-->
+    </main>
+     <div class="all-btn">
+            <div class="btn-left"><span class="up-page">上一页</span></div>
+            <div class="center">
+                <select name="" id="btn-sel">
+                    <option value="1">1/4</option>
+                    <option value="2">2/4</option>
+                    <option value="3">3/4</option>
+                    <option value="4">4/4</option>
+                </select>
+            </div>
+            <div class="btn-right"><span class="down-page">下一页</span></div>
+        </div>
+        <div class="b-menu">
+            <a href="index.html">首页</a> &gt;
+            <p>省钱控</p>
+        </div>
+    <!-- bottom -->
+    <footer id="footer">
+        <div class="row">
+            <div class="col-xs-4">
+                <a href="#">登录</a>
+            </div>
+            <div class="col-xs-4">
+                <a href="#">注册</a>
+            </div>
+            <div class="col-xs-4">
+                <a href="javascript:;" class="get-top"><span></span>返回顶部</a>
+            </div>
+        </div>
+        <p>
+            <a href="#">手机app下载</a><a href="#">慢慢买手机版</a>--掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </footer>
+    <!-- 模板 -->
+    <script type="text/html" id="b-savemoney">
+        {{each result as value i}}
+        <div class="media">
+            <div class="media-left">
+                <a href="discountItem.html?productId={{value.productId}}">
+						{{#value.productImgSm}}
+					</a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">{{value.productName}}</h4>
+                <p class="price">{{value.productPinkage}}</p>
+                <span class="from">{{value.productFrom}}</span>
+                <span class="comment"><i class="icon-comment"></i>{{value.productComCount.replace(/[^0-9]/g,"")}}</span>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+    <!-- js引入 -->
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/template.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="js/savemoney.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet/less" href="css/base.less">
+    <link rel="stylesheet/less" type="" href="css/coupon.less">
+    <script src="lib/less/less.js"></script>
+    <title>慢慢买</title>
+</head>
+
+<body>
+    <!--头部区域-->
+    <header class="clearfix">
+        <div class="back">
+            <a href="index.html">
+            </a>
+        </div>
+        <h1>国内折扣</h1>
+        <div class="download">
+            <img src="images/header_app.png" alt="">
+        </div>
+    </header>
+    <!--主体区域-->
+    <main>
+        <ul class="clearfix">
+
+        </ul>
+        <!--loading-->
+        <div class="load">
+            <img src="images/loading.png" alt="">
+        </div>
+    </main>
+
+    <!--footer区域-->
+    <footer>
+
+        <div class="footer-top">
+            <a href="login.aspx.htm" class='log'>登录</a>
+            <a href="login.aspx.htm" class='reg'>注册</a>
+            <a href="#" class='toTop'>
+                <img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+        </div>
+        <div class="footer-bottom">
+            <p><a href="javascript:;">
+                手机APP下载
+            </a><a href="index.html">慢慢买手机版</a>--掌上比价平台</p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+    <!--js引包-->
+    <script type='text/html' id='list'>
+    {{each result as value}}
+        <li>
+            <a href="{{value.couponLink}}?couponid={{value.couponId}}"><img data-original="{{value.couponImg}}" alt=""><p>{{value.couponTitle}}</p></a>
+        </li>
+    {{/each}}
+    </script>
+    <script src='lib/jquery/jquery.min.js'></script>
+    <script src='lib/template.js'></script>
+    <script src='lib/lazyload.js'></script>
+    <script src='js/coupon.js'></script>
+</body>
+
+</html>

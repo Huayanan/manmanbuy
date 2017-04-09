@@ -1,0 +1,33 @@
+/* 颜色 */
+.br {
+  border: 1px solid #ccc;
+}
+/* 手机排行榜 */
+.buy_main {
+  width: 100%;
+}
+.buy_main .main_tit {
+  margin: 10px 5px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  color: #874604;
+}
+.buy_main li {
+  height: 40px;
+  padding: 0 8px;
+}
+.buy_main li a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+  padding-left: 2px;
+  font-size: 16px;
+  font-weight: bold;
+  background: url(http://www.zuyushop.com/wap/images/arrow1.gif) no-repeat right center;
+}
+.buy_main li:last-child {
+  border: none;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">    
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <title>慢慢买</title>
+    <link rel="stylesheet/less" href="CSS/recommonDetail.less"> 
+    
+    <script src="lib/js/jquery-3.1.0.min.js"></script>
+    <script src="lib/js/template.js"></script>
+    <script type='text/javascript' src='lib/js/less.min.js'></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"></a>
+        国内折扣
+        <a href="javascript:window.location=%27http://m.manmanbuy.com/download/%27" onclick="trackEvent('header下载');" title="手机app下载"></a>
+    </header>
+
+
+    <section class='content'>        
+          <script type="text/html" id="templateMSG">  <!-- 模板引擎script的type类型需要注意，另外还需要有一个ID,方便模板引擎获取这个模板 -->
+              {{each result as value i}}
+                <div class='message'>
+                  <h5>{{value.productName}}</h5>
+                  <p>
+                      <span>{{value.productFrom}}</span>
+                      <span>{{value.productTime}}</span>
+                      <span>{{value.productTips}}</span>
+                  </p>
+                  {{#value.productImgSm}}
+                  <p>{{value.productInfo}}</p>
+                  <p>{{value.productInfo}}</p>
+                  {{#value.productImgSm}}
+                  {{#value.productCity}}                  
+                  <!-- <ul id=\"disstorck\">                               
+                    <li>
+                      <a href=\"javascript:;\" onclick=\"setdiqu('北京','有货')\">
+                        <span>北京<strong>有货</strong></span>
+                      </a>
+                    </li>
+                  </ul> -->     
+                </div>
+
+                <a class="goshopping" href="">前往购买</a>
+                <div class='erWeiCode'>
+                   <img src="images/mmbweixin2.png" alt="">
+                </div>
+                {{#value.productComment}}
+               <!--  <div class=\"cu-content-pl ui-border-t\">      
+                  <div class=\"tit\">发表评论</div>      
+                  <div class=\"reply\">        
+                    <div class=\"form\">       
+                      <textarea name=\"ctl00$ContentBody$txt_nr\" id=\"ctl00_ContentBody_txt_nr\" rows=\"3\"></textarea>                            
+                      <input name=\"ctl00$ContentBody$lbl_fbr\" id=\"ctl00_ContentBody_lbl_fbr\" value=\"手机端网友14***154\" type=\"hidden\">                            
+                      <input name=\"ctl00$ContentBody$hid_name\" id=\"ctl00_ContentBody_hid_name\" value=\"移动端凑单品：海天 鲜味 生抽 1.28L\" type=\"hidden\">                            
+                      <div class=\"ctrl\">                             
+                        <input name=\"ctl00$ContentBody$Button1\" value="发表评论" id=\"ctl00_ContentBody_Button1\" class=\"tjdp\" type=\"submit\">       
+                      </div>
+                    </div>
+                  </div>
+                  <div class=\"tit\" id=\"newcomment\">最新评论</div>      
+                  <div class=\"list\">       
+                    <ul>        
+                      <li class=\"ui-border-b\">
+                        <div class=\"userimg\">
+                          <img src=\"http://home.manmanbuy.com/upface/face/1466230634_162.jpg\">
+                        </div>
+
+                        <div class=\"con\">
+                          <div class=\"name clearfix\">
+                            <div class=\"username\">赶鸭子上比超市便宜了几块架比超市便宜了几块</div> 
+                            <div class=\"time\">比超市便宜了几块比超市便宜了几块2016/10/25 14:18:45</div>
+                          </div>
+                          <div class=\"content\">比超市便宜了几块比超市便宜了几块比超市便宜了几块比超市便宜了几块比超市便宜了几块比超市便宜了几块比超市便宜了几块比超市便宜了几块比超市便宜了几块比超市便宜了几块比超市便宜了几块</div>
+                        </div>
+                      </li>       
+                    </ul>    
+                  </div>   
+                </div>  -->
+              {{/each}}
+          </script>
+            
+        
+    </section>
+
+
+    <script src='js/footer.js'></script>
+
+    <script src='js/recommonDetail.js'></script>
+</body>
+</html>

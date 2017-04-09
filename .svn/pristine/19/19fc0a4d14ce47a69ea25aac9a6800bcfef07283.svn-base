@@ -1,0 +1,334 @@
+html {
+    font-size: 0.5rem;
+}
+
+@media only screen and (min-width: 401px) {
+    html {
+        font-size: 0.5rem !important;
+    }
+}
+
+@media only screen and (min-width: 428px) {
+    html {
+        font-size: 0.6rem !important;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    html {
+        font-size: 0.6rem !important;
+    }
+}
+
+@media only screen and (min-width: 569px) {
+    html {
+        font-size: 0.8rem !important;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    html {
+        font-size: 1rem !important;
+    }
+    #navigation {
+    >.ulcontainer {
+        >ul {
+           transform: translateX(0px)!important;}
+        }
+    }
+            
+}
+
+body {
+    // overflow-x: scroll!important;
+    min-width: 320px!important;
+    overflow: auto!important;
+}
+
+// 头部样式
+header {
+    // background: transparent;
+    // height: 100%;
+    height: 4rem;
+    >a {
+        margin-top: 0.3rem;
+        margin-left: 0.8rem;
+        display: block;
+        height: 3.5rem;
+        position: absolute;
+        >img {
+            width: 3.6rem;
+            height: 3.6rem;
+        }
+    }
+    >.download {
+        margin-right: 0.8rem;
+        margin-top: 0.2rem;
+        >img {
+            width: 3.2rem;
+            height: 3.6rem;
+        }
+    }
+    >h5 {
+        height: 4.0rem;
+        line-height: 4.0rem;
+        font-size: 2.2rem;
+        color: #fff;
+        margin: 0;
+        font-weight: 400;
+        background: #f4483e;
+        text-align: center;
+        word-break: breakall;
+    }
+}
+
+//导航栏的样式
+#navigation {
+    background: #fff;
+    >.ulcontainer {
+        overflow: hidden;
+        height: 3.8rem;
+        >ul {
+            width: 53rem;
+            margin: 0;
+            padding: 0;
+            transition: all 0.2s;
+            // transform: translateX(0px)!important;
+            >li {
+                float: left;
+                >a {
+                    display: inline-block;
+                    height: 3.8rem;
+                    line-height: 3.8rem;
+                    text-align: center;
+                    margin: 0 0.8rem;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.special {
+    color: #e4393c!important;
+    border-bottom: 2px solid #e4393c;
+}
+
+#backtop {
+    >a {
+        position: fixed;
+        z-index: 999;
+        bottom: 1rem;
+        right: 1rem;
+        width: 4rem;
+        text-align: center;
+        line-height: 4rem;
+        font-size: 3rem;
+        height: 4rem;
+        border-radius: 2rem;
+        opacity: 0.5;
+        background-color: #000000;
+        background-image: url("../images/向上.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 22px auto;
+        display: none;
+    }
+}
+
+// 超值折扣样式
+#recommend {
+    // 超值折扣標題的樣式
+    background: #f1f1f1;
+    // 超值折扣商品列表的樣式
+    >.rec-list {
+        background: #f1f1f1;
+        >.media {
+            background: #fff;
+            padding: 1.2rem 0.8rem;
+            margin-top: 1rem;
+            // box-sizing: border-box;
+            overflow: visible!important;
+            width: 100%;
+            // 商品圖片
+            >.media-left {
+                padding-top: 0.8rem;
+                >a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    >img {
+                        width: 13.4rem;
+                        height: 13.4rem;
+                    }
+                }
+            }
+            // 商品簡要信息
+            >.media-body {
+                // zoom=1;
+                >.media-heading {
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                    height: 2rem;
+                    text-align: left;
+                    font-weight: normal;
+                    word-wrap: break-word;
+                    word-break: break-all;
+                    // overflow: hidden;
+                    /* 内容超出宽度时隐藏超出部分的内容 */
+                    text-overflow: ellipsis;
+                }
+                >span {
+                    margin-top: 1rem;
+                    color: red;
+                    font-size: 2.4rem;
+                    line-height: 3.6rem;
+                    height: 3.6rem;
+                    >i {
+                        font-size: 1.6rem;
+                        margin-right: 1rem;
+                    }
+                    >em {
+                        font-size: 2rem;
+                    }
+                    >del {
+                        color: #c1c1c1;
+                        text-decoration: line-through;
+                        font-size: 1.2rem;
+                        margin-left: 1rem;
+                    }
+                }
+                >.percent {
+                    margin-top: 1.5rem;
+                    font-size: 1.5rem;
+                    >div {
+                        a {
+                            line-height: 0;
+                        }
+                        >i {
+                            display: inline-block;
+                            width: 10rem;
+                            height: 2rem;
+                            background: pink;
+                            position: relative;
+                            border: 0.2rem solid red;
+                            border-radius: 1rem;
+                            float: left;
+                            >em {
+                                display: inline-block;
+                                width: 5rem;
+                                height: 100%;
+                                border-radius: 0.8rem;
+                                background: red;
+                                transition: all 0.5s cubic-bezier(0.39, 0.58, 0.57, 1);
+                            }
+                            >span {
+                                position: absolute;
+                                left: 50%;
+                                margin-left: -1rem;
+                                height: 100%;
+                                color: #fff;
+                                font-weight: 600;
+                            }
+                        }
+                        >b {
+                            float: left;
+                            display: inline-block;
+                            height: 2rem;
+                            line-height: 2rem;
+                            margin-left: 1rem;
+                            color: red;
+                        }
+                    }
+                }
+                >.link {
+                    height: 100%;
+                    margin-top: 1.5rem;
+                    box-sizing: border-box;
+                    white-space: nowrap;
+                    height: 4rem;
+                    min-width: 17rem;
+                    // overflow: hidden;
+                    a {
+                        font-size: 1.5rem;
+                        &:nth-child(1) {
+                            float: left;
+                            height: 3rem;
+                            line-height: 1.6rem;
+                            padding: 0.6rem;
+                            border: 0.2rem dotted red;
+                            text-align: center;
+                            color: red;
+                        }
+                        &:nth-child(2) {
+                            float: right;
+                            padding: 0.8rem;
+                            background: red;
+                            color: #fff;
+                            border-radius: 0.5rem;
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 回到顶部
+// 首頁底的樣式
+#footer {
+    >.footer-title {
+        padding-top: 0.8rem;
+        margin-bottom: 0.1rem;
+        height: 3.5rem;
+        background-color: #ff9000;
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffaf47), to(#ff9000));
+        border-bottom: 0.1rem solid #ffc881;
+        line-height: 3.5rem;
+        overflow: hidden;
+        color: #fff;
+        padding-left: 1rem;
+        font-weight: bold;
+        font-size: 1.8rem;
+        clear: both;
+        >h5 {
+            font-size: 1.6rem;
+            margin: 0;
+        }
+        >img {
+            float: right;
+            width: 2rem;
+            height: 2rem;
+            margin-right: 1.2rem;
+        }
+    }
+    >.login {
+        >.con {
+            border-top: 0.1rem solid #ccc;
+            border-bottom: 0.1rem solid #ccc;
+            height: 3rem;
+            >div {
+                text-align: center;
+                border-right: 0.1rem solid #ccc;
+                height: 3rem;
+                line-height: 3rem;
+                img {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    margin-left: -2rem;
+                    margin-top: -0.5rem;
+                }
+            }
+        }
+    }
+    >p {
+        text-align: center;
+        margin: 0.08rem 0;
+        text-align: center;
+        font-size: 0.12rem;
+        >.red {
+            color: red;
+        }
+    }
+}

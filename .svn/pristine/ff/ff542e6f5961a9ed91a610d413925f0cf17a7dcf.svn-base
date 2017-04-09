@@ -1,0 +1,70 @@
+@charset "utf-8";
+@white:#fff;
+@orange:#F8601D;
+@btn_yellow:#FF9501;
+div,span,p,h1,h2,h3,
+ul,ol,li, {
+    margin:0;
+    padding:0;
+}
+button {
+    border:none;
+    outline:none;
+    -webkit-appearance:none;
+}
+/*精灵图*/
+[class^="icon_"]{
+    background:url(../images/icon_bar.png) no-repeat center center/50% 50%;
+}
+[class~="icon_arr_down"]{
+}
+/*header*/
+header {
+    > a {
+        color:@white;
+        font:normal 30px/50px "黑体";
+        padding:0 20px;
+        /*float:left;*/
+        // a设置浮动后，下面h3虽然可以显示在下面 并占据整行，
+        // 但h3设置text-align:center后，文字不会在整行的中心，而是在a右边区域中居中。
+        position:absolute;
+        left:0px;
+    }
+    > h3 {
+        color:@white;
+        text-align:center;
+        line-height:50px;
+        font-weight:normal;
+    }
+}
+/*箭头*/
+.arr() {
+  width:0;
+  height:0;
+  line-height:0;
+  border-width:6px;
+  border-style:solid;
+}
+.arr_top(){
+  .arr();
+  top:0;
+  border-color:transparent transparent #565656;
+}
+.arr_down(){
+  .arr();
+  top:6px;
+  border-color:#565656 transparent transparent;
+}
+/*公共类*/
+.one-txt-cut() {
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.txt-cut() {
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp:5;
+  -webkit-box-orient:vertical;
+}

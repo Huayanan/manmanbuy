@@ -1,0 +1,39 @@
+@charset "utf-8";
+div,
+span,
+p,
+h1,
+h2,
+h3,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+/*精灵图*/
+[class^="icon_"] {
+  background: url(../images/icon_bar.png) no-repeat center center / 50% 50%;
+}
+/*header*/
+header > a {
+  color: #ffffff;
+  font: normal 30px/50px "黑体";
+  padding: 0 20px;
+  /*float:left;*/
+  position: absolute;
+  left: 0px;
+}
+header > h3 {
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+  font-weight: normal;
+}
+/*箭头*/
+/*公共类*/
